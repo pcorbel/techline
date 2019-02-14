@@ -1,0 +1,33 @@
+themes:
+
+  - title: "Data Release"
+    color: "#4285F4"
+    icon: "fab fa-github"
+
+  - title: "Android Release"
+    color: "#0F9D58"
+    icon: "fab fa-android"
+
+  - title: "iOS Release"
+    color: "#DB4437"
+    icon: "fab fa-apple"
+
+  - title: "Back Release"
+    color: "#F4B400"
+    icon: "fas fa-database"
+
+  - title: "Incident"
+    color: "#DB4437"
+    icon: "fas fa-bug"
+
+  - title: "Manual Operation"
+    color: "#F4B400"
+    icon: "fas fa-hand-paper"
+
+  - title: "A/B Test"
+    color: "#4285F4"
+    icon: "fab fa-apple"
+
+  - title: "Other"
+    color: "#0F9D58"
+    icon: "fas fa-star"

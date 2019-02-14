@@ -1,0 +1,14 @@
+---
+# Postgres DB configuration.
+db_hostname: techline-db
+db_port: 5432
+db_name: postgres
+db_user: postgres
+db_password: postgres
+db_ssl_mode: disable
+db_reset: false
+
+# Server configuration.
+log_level: info
+server_port: 8080
+web_directory: /app/web/dist

@@ -1,0 +1,30 @@
+---
+version: "3"
+services:
+  # Postgres DB exposed on port 5432    
+  techline-db:
+    container_name: techline-db
+    image: library/postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=postgres
+    restart: always  
+  # techline server exposed on port 8080
+  techline:
+    container_name: techline
+    image: pcorbel/techline:v0.1.0
+    ports:
+      - "8080:8080"
+    environment:
+      - CONFIG_FILE=/app/configs/config.yaml
+      - THEMES_FILE=/app/configs/themes.yaml
+    links:
+      - "techline-db:techline-db"
+    volumes:
+      - "../configs/config.yaml:/app/configs/config.yaml"
+      - "../configs/themes.yaml:/app/configs/themes.yaml"
+    restart: always
+    
