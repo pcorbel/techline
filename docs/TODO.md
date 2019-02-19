@@ -7,3 +7,4 @@
 
 * Refacto
 ** Better filter UI
+** New icon

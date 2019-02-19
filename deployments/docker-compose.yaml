@@ -5,17 +5,17 @@ services:
   techline-db:
     container_name: techline-db
     image: library/postgres
-    ports:
-      - "5432:5432"
+    expose:
+      - "5432"
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_DB=postgres
     restart: always  
-  # techline server exposed on port 8080
+  # techline server mapped on port 8080
   techline:
     container_name: techline
-    image: pcorbel/techline:v0.1.0
+    image: pcorbel/techline
     ports:
       - "8080:8080"
     environment:

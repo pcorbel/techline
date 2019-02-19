@@ -49,7 +49,7 @@ export default {
       this.$store.commit("updateDeleteDialog", true);
     },
     formatDate(created_at) {
-      return format(created_at, "YYYY-MM-DD HH:MM:SS");
+      return format(created_at, "YYYY-MM-DD HH:mm:ss");
     }
   },
   computed: {

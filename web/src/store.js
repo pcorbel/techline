@@ -34,7 +34,7 @@ export default new Vuex.Store({
         ? "1970-01-01 00 00 00"
         : format(
             state.events[0].created_at,
-            "YYYY-MM-DD HH:MM:SS"
+            "YYYY-MM-DD HH:mm:ss"
           );
     }
   },
